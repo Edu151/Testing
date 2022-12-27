@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerencial</title>
+    <link rel="stylesheet" href="./CSS/styleGerencial.css">
+
+
+</head>
+
+<body>
+    <div class="nav">
+        <hr>
+        <nav>
+            <button id="menu-button">Menu</button>
+
+            <ul>
+                <li class="nav-link">
+                    <a class="nav-link" href="Inicio.html">Inicio</a>
+                </li>
+                <li>
+                    <span class="menu-trigger"> <a class="nav-link" href="Gerencial.html">Comercial</a></span>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Financeiro</a>
+                </li>
+                <li>
+                    <a calss="nav-link" href="#">Estoque</a>
+                </li>
+                <li>
+                    <a calss="nav-link" href="#">Pessoa</a>
+                </li>
+                <li>
+                    <a calss="nav-link" href="#">Quem somos</a>
+                </li>
+                <li>
+                    <a calss="nav-link" href="#">Projetos</a>
+                </li>
+                <li>
+                    <a calss="nav-link" href="#">Produtos</a>
+                </li>
+
+            </ul>
+        </nav>
+        <hr>
+    </div>
+    <div class="lema">
+        <h1>MANUAL DE USABILIDADE SISTEMA REINVENT</h1>
+        <h1>
+            A perseverança é o caminho para o SUCESSO.
+        </h1>
+        <div class="logo">
+            <img src="./IMG/imagem_app-removebg-preview.png">
+        </div>
+    </div>
+
+    <div class="container">
+        <p>
+        <h1>Comercial</h1>
+        </p>
+        <hr>
+        <main>
+            <form action="search">
+                <input type="search" id="searchInput" />
+                <button onclick="search()">Pesquisar</button>
+                <p id="searchResult"></p>
+            </form>
+
+            <div class="content"></div>
+        </main>
+        <script>
+            function search() {
+                // Obtém o valor do input de pesquisa
+                var search = document.getElementById("searchInput").value;
+                // Pesquisa o termo na página HTML
+                var searchResultIndex = document.body.innerHTML.indexOf(searchTerm);
+                // Exibe o resultado da pesquisa
+                if (searchResultIndex === -1) {
+                    document.getElementById("searchResult").innerHTML = "NÃO ENCONTRADO.";
+                } else {
+                    document.getElementById("searchResult").innerHTML = "TERMO " + searchResultIndex;
+                }
+            }
+
+        </script>
+        <div class="itens">
+
+            <div class="side-bar">
+
+                <ul class="nav-list">
+                    <ul>
+                        <a href="ajuste de etoque.html">Ajuste de estoque</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Andamento de nota de compra</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Andamento Ordem de serviço</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Cotação de Compra</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Devolução de Compra</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Devolução de Compra</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Devolução de requisição</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Devolução de Venda</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Importação Sefaz</a>
+                    </ul>
+                    <ul>
+                        <a href="#">Nota de Comodato</a>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+</body>
+
+</html>
